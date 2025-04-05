@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Formulario Personalizado</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div id="particles-js"></div>
+  <div class="form-wrapper">
+    <div class="form-header">
+      <h2>Información del Prestador</h2>
+      <p>Diligenciar la siguiente información para brindarle una Propuesta Económica.</p>
+      <p><strong style="color: #fff;">* Indica que la pregunta es obligatoria</strong></p>
+    </div>
+    <form action="https://docs.google.com/forms/d/e/1FAIpQLSdhm8l3i4sSWlLZoCjMLIcqqi7ta-dZlqiPQ2m7MNVMW8qjmA/formResponse" method="POST" target="_blank">
+        <label class="required" for="entry.380469360">Nombre Del Funcionario</label>
+        <input type="text" name="entry.380469360" required>
+      
+        <label class="required" for="entry.1351192196">Número de contacto (celular)</label>
+        <input type="tel" name="entry.1351192196" maxlength="10" required>
+      
+        <label class="required" for="entry.2118373087">Dirección de email</label>
+        <input type="email" name="entry.2118373087" required>
+      
+        <label class="required" for="entry.207358704">Nombre de la institución</label>
+        <input type="text" name="entry.207358704" required>
+      
+        <label class="required" for="entry.117286825">NIT de la institución</label>
+        <input type="number" name="entry.117286825" required>
+      
+        <label class="required" for="entry.681806925">Nombre del Gerente</label>
+        <input type="text" name="entry.681806925" required>
+      
+        <label class="required" for="entry.678211437">Nivel de Complejidad de la institución</label>
+        <select name="entry.678211437" required>
+        <option value="" disabled selected>Seleccione una opción</option>
+        <option value="Primer Nivel">Primer Nivel</option>
+        <option value="Segundo Nivel">Segundo Nivel</option>
+        <option value="Tercer Nivel">Tercer Nivel</option>
+        </select>
+      
+        <label class="required" for="entry.295629636">Número de sedes</label>
+        <input type="number" name="entry.295629636" required>
+      
+        <label class="required" for="entry.982255399">Número de usuarios que usarán el sistema</label>
+        <input type="number" name="entry.982255399" required>
+      
+        <label class="required" for="entry.1870139906">Número de consultorios que tiene la institución</label>
+        <input type="number" name="entry.1870139906" required>
+      
+        <label class="required" for="entry.2012883843">Cantidad de especialidades</label>
+        <input type="text" name="entry.2012883843" required>
+      
+        <label class="required" for="entry.183735516">La institución cuenta con:</label>
+        <div class="radio-group">
+          <label><input type="radio" name="entry.183735516" value="Consulta Externa" required> Consulta Externa</label>
+          <label><input type="radio" name="entry.183735516" value="Urgencias"> Urgencias</label>
+          <label><input type="radio" name="entry.183735516" value="Hospitalización"> Hospitalización</label>
+          <label><input type="radio" name="entry.183735516" value="UCI"> UCI</label>
+          <label><input type="radio" name="entry.183735516" value="UCI intermedia"> UCI intermedia</label>
+          <label><input type="radio" name="entry.183735516" value="UCI Neonatal o pediátrica"> UCI Neonatal o pediátrica</label>
+          <label><input type="radio" name="entry.183735516" value="Quirófanos"> Quirófanos</label>
+          <label><input type="radio" name="entry.183735516" value="Imágenes Diagnosticas"> Imágenes Diagnosticas</label>
+          <label><input type="radio" name="entry.183735516" value="Laboratorio Clínico"> Laboratorio Clínico</label>
+          <label><input type="radio" name="entry.183735516" value="Farmacia"> Farmacia</label>
+        </div>
+      
+        <label class="required" for="entry.1578001972">Presupuesto mensual disponible para el sistema SAMA</label>
+        <input type="number" name="entry.1578001972" required>
+      
+        <label class="required" for="entry.301871406">Facturación mensual de la institución</label>
+        <input type="number" name="entry.301871406" required>
+      
+        <label class="required" for="entry.949435535">Cantidad de facturas realizadas mensualmente</label>
+        <input type="number" name="entry.949435535" required>
+      
+        <label class="required" for="entry.2037967222">¿Realizan facturación agrupada?</label>
+        <div class="radio-group">
+        <label><input type="radio" name="entry.2037967222" value="Si" required> Sí</label>
+        <label><input type="radio" name="entry.2037967222" value="NO"> No</label>
+        </div>
+      
+        <label class="required" for="entry.1981693786">¿Cómo se llama el sistema de información actual?</label>
+        <input type="text" name="entry.1981693786" required>
+      
+        <label class="required" for="entry.1181237721">¿El sistema que usan es WEB o de ESCRITORIO?</label>
+        <input type="text" name="entry.1181237721" required>
+      
+        <label class="required" for="entry.224575700">¿El sistema de facturación y asistencial es el mismo?</label>
+        <div class="radio-inline">
+        <label><input type="radio" name="entry.224575700" value="SI" required> Sí</label>
+        <label><input type="radio" name="entry.224575700" value="NO"> No</label>
+        <label><input type="radio" name="entry.224575700" value="Otro"> Otro</label>
+        <input type="text" name="entry.224575700_otro" placeholder="Especifique" disabled>
+        </div>
+      
+        <button type="submit">Enviar</button>
+      </form>
+  </div>
+  <script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>

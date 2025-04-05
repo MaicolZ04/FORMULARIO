@@ -1,0 +1,97 @@
+body {
+    margin: 0;
+    font-family: sans-serif;
+    background: #f2f2f2;
+    position: relative;
+  }
+  #particles-js {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    background: none;
+  }
+  .form-wrapper {
+    max-width: 600px;
+    margin: 50px auto;
+    background: white;
+    border-radius: 20px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+    overflow: hidden;
+    animation: fadeInUp 1s ease;
+  }
+  .form-header {
+    background: #4a90e2;
+    padding: 40px 20px;
+    text-align: center;
+    animation: fadeIn 1s ease;
+  }
+  .form-header h2 {
+    margin: 0;
+    font-size: 24px;
+    color: #fff;
+  }
+  .form-header p {
+    color: #fff;
+    margin: 10px 0 0;
+  }
+  form {
+    padding: 30px;
+    animation: fadeIn 1.5s ease;
+  }
+  label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+  }
+  label.required::after {
+    content: " *";
+    color: red;
+  }
+  input, select, textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    font-size: 14px;
+  }
+  input[type="radio"] {
+    width: auto;
+    margin-right: 10px;
+  }
+  .radio-group label {
+    display: block;
+    margin-bottom: 10px;
+    font-weight: normal;
+  }
+  .radio-inline {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 20px;
+  }
+  button {
+    width: 100%;
+    padding: 12px;
+    background: #aabaff;
+    border: none;
+    color: white;
+    font-size: 16px;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background 0.3s;
+  }
+  button:hover {
+    background: #8797ff;
+  }
+  @keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+  }
+  @keyframes fadeInUp {
+    from { opacity: 0; transform: translateY(20px); }
+    to { opacity: 1; transform: translateY(0); }
+  }
