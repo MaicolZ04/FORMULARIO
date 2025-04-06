@@ -4,7 +4,8 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Formulario Personalizado</title>
-    <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap">
+  <link rel="stylesheet" href="styles.css">
 </head>
 <body>
   <div id="particles-js"></div>
@@ -16,42 +17,42 @@
     </div>
     <form action="https://docs.google.com/forms/d/e/1FAIpQLSdhm8l3i4sSWlLZoCjMLIcqqi7ta-dZlqiPQ2m7MNVMW8qjmA/formResponse" method="POST" target="_blank">
         <label class="required" for="entry.380469360">Nombre Del Funcionario</label>
-        <input type="text" name="entry.380469360" required>
+        <input type="text" name="entry.380469360" required placeholder="Ingrese el nombre completo">
       
         <label class="required" for="entry.1351192196">Número de contacto (celular)</label>
-        <input type="tel" name="entry.1351192196" maxlength="10" required>
+        <input type="tel" name="entry.1351192196" maxlength="10" required placeholder="Ej: 3001234567">
       
         <label class="required" for="entry.2118373087">Dirección de email</label>
-        <input type="email" name="entry.2118373087" required>
+        <input type="email" name="entry.2118373087" required placeholder="correo@ejemplo.com">
       
         <label class="required" for="entry.207358704">Nombre de la institución</label>
-        <input type="text" name="entry.207358704" required>
+        <input type="text" name="entry.207358704" required placeholder="Nombre de la institución">
       
         <label class="required" for="entry.117286825">NIT de la institución</label>
-        <input type="number" name="entry.117286825" required>
+        <input type="number" name="entry.117286825" required placeholder="Ingrese el NIT sin puntos ni guiones">
       
         <label class="required" for="entry.681806925">Nombre del Gerente</label>
-        <input type="text" name="entry.681806925" required>
+        <input type="text" name="entry.681806925" required placeholder="Nombre completo del gerente">
       
         <label class="required" for="entry.678211437">Nivel de Complejidad de la institución</label>
         <select name="entry.678211437" required>
-        <option value="" disabled selected>Seleccione una opción</option>
-        <option value="Primer Nivel">Primer Nivel</option>
-        <option value="Segundo Nivel">Segundo Nivel</option>
-        <option value="Tercer Nivel">Tercer Nivel</option>
+          <option value="" disabled selected>Seleccione una opción</option>
+          <option value="Primer Nivel">Primer Nivel</option>
+          <option value="Segundo Nivel">Segundo Nivel</option>
+          <option value="Tercer Nivel">Tercer Nivel</option>
         </select>
       
         <label class="required" for="entry.295629636">Número de sedes</label>
-        <input type="number" name="entry.295629636" required>
+        <input type="number" name="entry.295629636" required placeholder="Cantidad de sedes">
       
         <label class="required" for="entry.982255399">Número de usuarios que usarán el sistema</label>
-        <input type="number" name="entry.982255399" required>
+        <input type="number" name="entry.982255399" required placeholder="Cantidad de usuarios">
       
         <label class="required" for="entry.1870139906">Número de consultorios que tiene la institución</label>
-        <input type="number" name="entry.1870139906" required>
+        <input type="number" name="entry.1870139906" required placeholder="Cantidad de consultorios">
       
         <label class="required" for="entry.2012883843">Cantidad de especialidades</label>
-        <input type="text" name="entry.2012883843" required>
+        <input type="text" name="entry.2012883843" required placeholder="Número de especialidades">
       
         <label class="required" for="entry.183735516">La institución cuenta con:</label>
         <div class="radio-group">
@@ -68,38 +69,99 @@
         </div>
       
         <label class="required" for="entry.1578001972">Presupuesto mensual disponible para el sistema SAMA</label>
-        <input type="number" name="entry.1578001972" required>
+        <input type="number" name="entry.1578001972" required placeholder="Ingrese el monto en pesos">
       
         <label class="required" for="entry.301871406">Facturación mensual de la institución</label>
-        <input type="number" name="entry.301871406" required>
+        <input type="number" name="entry.301871406" required placeholder="Ingrese el monto en pesos">
       
         <label class="required" for="entry.949435535">Cantidad de facturas realizadas mensualmente</label>
-        <input type="number" name="entry.949435535" required>
+        <input type="number" name="entry.949435535" required placeholder="Número de facturas por mes">
       
         <label class="required" for="entry.2037967222">¿Realizan facturación agrupada?</label>
         <div class="radio-group">
-        <label><input type="radio" name="entry.2037967222" value="Si" required> Sí</label>
-        <label><input type="radio" name="entry.2037967222" value="NO"> No</label>
+          <label><input type="radio" name="entry.2037967222" value="Si" required> Sí</label>
+          <label><input type="radio" name="entry.2037967222" value="NO"> No</label>
         </div>
       
         <label class="required" for="entry.1981693786">¿Cómo se llama el sistema de información actual?</label>
-        <input type="text" name="entry.1981693786" required>
+        <input type="text" name="entry.1981693786" required placeholder="Nombre del sistema actual">
       
         <label class="required" for="entry.1181237721">¿El sistema que usan es WEB o de ESCRITORIO?</label>
-        <input type="text" name="entry.1181237721" required>
+        <input type="text" name="entry.1181237721" required placeholder="WEB o ESCRITORIO">
       
-        <label class="required" for="entry.224575700">¿El sistema de facturación y asistencial es el mismo?</label>
-        <div class="radio-inline">
-        <label><input type="radio" name="entry.224575700" value="SI" required> Sí</label>
-        <label><input type="radio" name="entry.224575700" value="NO"> No</label>
-        <label><input type="radio" name="entry.224575700" value="Otro"> Otro</label>
-        <input type="text" name="entry.224575700_otro" placeholder="Especifique" disabled>
+        <label>¿El sistema de facturación y asistencial es el mismo?</label>
+  
+        <div class="radio-group">
+          <label class="radio-item">
+            <input type="radio" name="entry.224575700" value="SI" class="main-radio"> SI
+          </label>
+          <label class="radio-item">
+            <input type="radio" name="entry.224575700" value="NO" class="main-radio"> NO
+          </label>
+          <label class="radio-item">
+            <input type="radio" 
+                  name="entry.224575700" 
+                  value="__other_option__" 
+                  id="otroRadio"> Otro
+          </label>
         </div>
+        
+        <!-- Campo con animación mejorada -->
+        <div id="otroInputContainer" class="hidden">
+          <input type="text" 
+                name="entry.224575700.other_option_response" 
+                placeholder="Especifique aquí..."
+                class="other-input">
+        </div>
+
       
-        <button type="submit">Enviar</button>
-      </form>
+        <button type="submit">Enviar Información</button>
+
+    </form>
   </div>
+
+  <div id="customAlert" class="alert-modal hidden">
+    <div class="modal-content error-modal">
+      <span class="close-modal">✖</span>
+      <div class="error-icon">!</div>
+      <p class="error-message">Por favor complete el campo <strong>"Otra..."</strong></p>
+      <button class="accept-btn">Entendido</button>
+    </div>
+  </div>
+
   <script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
   <script src="app.js"></script>
+  <script>
+   // Control de todos los radio buttons
+  document.querySelectorAll('input[name="entry.224575700"]').forEach(radio => {
+    radio.addEventListener('change', function() {
+      const container = document.getElementById('otroInputContainer');
+      
+      if (this.id === 'otroRadio') {
+        container.classList.remove('hidden');
+        container.classList.add('visible');
+        setTimeout(() => {
+          container.querySelector('input').focus();
+        }, 300);
+      } else {
+        container.classList.remove('visible');
+        container.classList.add('hidden');
+        container.querySelector('input').value = '';
+      }
+    });
+  });
+
+  // Validación al enviar
+  document.querySelector('form').addEventListener('submit', function(e) {
+    const otroRadio = document.getElementById('otroRadio');
+    const otroInput = document.querySelector('input[name="entry.224575700.other_option_response"]');
+    
+    if (otroRadio.checked && !otroInput.value.trim()) {
+      e.preventDefault();
+      showCustomAlert();
+      otroInput.focus();
+    }
+  });
+  </script>
 </body>
 </html>
