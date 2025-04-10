@@ -104,10 +104,14 @@
         <label class="required" for="entry.949435535">Cantidad de facturas realizadas mensualmente</label>
         <input type="number" name="entry.949435535" required placeholder="Número de facturas por mes">
       
-        <label class="required" for="entry.2037967222">¿Realizan facturación agrupada?</label>
+        <label class="required" for="entry.2037967222">Modalidad de facturación</label>
         <div class="radio-group">
-          <label><input type="radio" name="entry.2037967222" value="Si" required> Sí</label>
-          <label><input type="radio" name="entry.2037967222" value="NO"> No</label>
+          <label class="radio-item">
+            <input type="checkbox" name="entry.2037967222" value="Factura por usuario"> Factura por usuario
+          </label>
+          <label class="radio-item">
+            <input type="checkbox" name="entry.2037967222" value="Facturación agrupada"> Facturación agrupada
+          </label>
         </div>
       
         <label class="required" for="entry.1981693786">¿Cómo se llama el sistema de información actual?</label>
