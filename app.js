@@ -33,6 +33,14 @@ document.querySelector('form').addEventListener('submit', function(e) {
   }
 });
 
+document.querySelector('form').addEventListener('submit', function(e) {
+  const checkboxes = document.querySelectorAll('input[name="entry.183735516"]:checked');
+  if (checkboxes.length === 0) {
+    e.preventDefault();
+    alert('Por favor seleccione al menos una opción en "La institución cuenta con".');
+  }
+});
+
 // Animación de shake para el input
 const style = document.createElement('style');
 style.innerHTML = `

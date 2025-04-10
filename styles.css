@@ -303,7 +303,6 @@ button:hover::after {
   box-shadow: 0 6px 12px rgba(255, 82, 82, 0.4);
 }
 
-/* Animaciones */
 @keyframes pulse {
   0% { transform: scale(0.8); opacity: 0.5; }
   70% { transform: scale(1.1); opacity: 1; }
@@ -317,6 +316,56 @@ button:hover::after {
 
 .modal-show .modal-content {
   transform: translate(-50%, -50%) scale(1);
+}
+
+
+.checkbox-group {
+  display: flex;
+  flex-direction: column;
+  gap: 10px; 
+}
+
+.checkbox-item {
+  display: flex;
+  align-items: center;
+  font-family: 'Poppins', sans-serif;
+  font-size: 14px;
+  color: #333;
+  cursor: pointer;
+}
+
+.checkbox-item input[type="checkbox"] {
+  margin-right: 10px;
+  width: 16px;
+  height: 16px;
+  cursor: pointer;
+}
+
+.checkbox-item:hover {
+  color: #007BFF;
+}
+
+.checkbox-item input[type="checkbox"]:checked + label {
+  font-weight: bold; 
+}
+
+.radio-group input[type="checkbox"] {
+  width: auto;
+  margin-right: 10px;
+  cursor: pointer;
+}
+
+.radio-group label {
+  display: block;
+  margin-bottom: 12px;
+  font-weight: normal;
+  cursor: pointer;
+  transition: transform 0.2s ease, color 0.2s ease;
+}
+
+.radio-group label:hover {
+  transform: translateX(5px);
+  color: #007BFF;
 }
 
 @keyframes slideUp {
